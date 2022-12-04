@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD5D411C293CE1FF002A471F /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D411B293CE1FE002A471F /* Parser.swift */; };
+		CD5D411E293CE50D002A471F /* LocationsForSimulation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CD5D411D293CE50D002A471F /* LocationsForSimulation.gpx */; };
+		CD6F11B8293A551C00FE8F2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F11B7293A551C00FE8F2F /* AppDelegate.swift */; };
+		CD6F11BA293A551C00FE8F2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F11B9293A551C00FE8F2F /* SceneDelegate.swift */; };
+		CD6F11BC293A551C00FE8F2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F11BB293A551C00FE8F2F /* ViewController.swift */; };
+		CD6F11BF293A551C00FE8F2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F11BD293A551C00FE8F2F /* Main.storyboard */; };
+		CD6F11C1293A552400FE8F2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6F11C0293A552400FE8F2F /* Assets.xcassets */; };
+		CD6F11C4293A552400FE8F2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F11C2293A552400FE8F2F /* LaunchScreen.storyboard */; };
+		CD6F11CF293A552500FE8F2F /* GeotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F11CE293A552500FE8F2F /* GeotificationTests.swift */; };
+		CD6F11D9293A552500FE8F2F /* GeotificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F11D8293A552500FE8F2F /* GeotificationUITests.swift */; };
+		CD6F11DB293A552500FE8F2F /* GeotificationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F11DA293A552500FE8F2F /* GeotificationUITestsLaunchTests.swift */; };
+		CD6F11E9293A682400FE8F2F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6F11E8293A682400FE8F2F /* MapKit.framework */; };
+		CD6F11EB293A683700FE8F2F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6F11EA293A683700FE8F2F /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD6F11CB293A552500FE8F2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD6F11AC293A551C00FE8F2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD6F11B3293A551C00FE8F2F;
+			remoteInfo = Geotification;
+		};
+		CD6F11D5293A552500FE8F2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD6F11AC293A551C00FE8F2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD6F11B3293A551C00FE8F2F;
+			remoteInfo = Geotification;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD5D411B293CE1FE002A471F /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		CD5D411D293CE50D002A471F /* LocationsForSimulation.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationsForSimulation.gpx; sourceTree = "<group>"; };
+		CD6F11B4293A551C00FE8F2F /* Geotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6F11B7293A551C00FE8F2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD6F11B9293A551C00FE8F2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD6F11BB293A551C00FE8F2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD6F11BE293A551C00FE8F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD6F11C0293A552400FE8F2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD6F11C3293A552400FE8F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD6F11C5293A552400FE8F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD6F11CA293A552500FE8F2F /* GeotificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeotificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6F11CE293A552500FE8F2F /* GeotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeotificationTests.swift; sourceTree = "<group>"; };
+		CD6F11D4293A552500FE8F2F /* GeotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6F11D8293A552500FE8F2F /* GeotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeotificationUITests.swift; sourceTree = "<group>"; };
+		CD6F11DA293A552500FE8F2F /* GeotificationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeotificationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD6F11E8293A682400FE8F2F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CD6F11EA293A683700FE8F2F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD6F11B1293A551C00FE8F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6F11EB293A683700FE8F2F /* CoreLocation.framework in Frameworks */,
+				CD6F11E9293A682400FE8F2F /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6F11C7293A552500FE8F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6F11D1293A552500FE8F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD5D411F293D3699002A471F /* Geotification.Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D411B293CE1FE002A471F /* Parser.swift */,
+			);
+			path = Geotification.Model;
+			sourceTree = "<group>";
+		};
+		CD5D4120293D36B4002A471F /* Geotification.Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F11BB293A551C00FE8F2F /* ViewController.swift */,
+			);
+			path = Geotification.Controller;
+			sourceTree = "<group>";
+		};
+		CD5D4121293D3802002A471F /* Geotification.StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F11BD293A551C00FE8F2F /* Main.storyboard */,
+			);
+			path = Geotification.StoryBoards;
+			sourceTree = "<group>";
+		};
+		CD6F11AB293A551C00FE8F2F = {
+			isa = PBXGroup;
+			children = (
+				CD6F11B6293A551C00FE8F2F /* Geotification */,
+				CD6F11CD293A552500FE8F2F /* GeotificationTests */,
+				CD6F11D7293A552500FE8F2F /* GeotificationUITests */,
+				CD6F11B5293A551C00FE8F2F /* Products */,
+				CD6F11E7293A682400FE8F2F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD6F11B5293A551C00FE8F2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F11B4293A551C00FE8F2F /* Geotification.app */,
+				CD6F11CA293A552500FE8F2F /* GeotificationTests.xctest */,
+				CD6F11D4293A552500FE8F2F /* GeotificationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD6F11B6293A551C00FE8F2F /* Geotification */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F11B7293A551C00FE8F2F /* AppDelegate.swift */,
+				CD6F11B9293A551C00FE8F2F /* SceneDelegate.swift */,
+				CD5D411F293D3699002A471F /* Geotification.Model */,
+				CD5D4120293D36B4002A471F /* Geotification.Controller */,
+				CD5D4121293D3802002A471F /* Geotification.StoryBoards */,
+				CD5D411D293CE50D002A471F /* LocationsForSimulation.gpx */,
+				CD6F11C0293A552400FE8F2F /* Assets.xcassets */,
+				CD6F11C2293A552400FE8F2F /* LaunchScreen.storyboard */,
+				CD6F11C5293A552400FE8F2F /* Info.plist */,
+			);
+			path = Geotification;
+			sourceTree = "<group>";
+		};
+		CD6F11CD293A552500FE8F2F /* GeotificationTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F11CE293A552500FE8F2F /* GeotificationTests.swift */,
+			);
+			path = GeotificationTests;
+			sourceTree = "<group>";
+		};
+		CD6F11D7293A552500FE8F2F /* GeotificationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F11D8293A552500FE8F2F /* GeotificationUITests.swift */,
+				CD6F11DA293A552500FE8F2F /* GeotificationUITestsLaunchTests.swift */,
+			);
+			path = GeotificationUITests;
+			sourceTree = "<group>";
+		};
+		CD6F11E7293A682400FE8F2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F11EA293A683700FE8F2F /* CoreLocation.framework */,
+				CD6F11E8293A682400FE8F2F /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD6F11B3293A551C00FE8F2F /* Geotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD6F11DE293A552500FE8F2F /* Build configuration list for PBXNativeTarget "Geotification" */;
+			buildPhases = (
+				CD6F11B0293A551C00FE8F2F /* Sources */,
+				CD6F11B1293A551C00FE8F2F /* Frameworks */,
+				CD6F11B2293A551C00FE8F2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Geotification;
+			productName = Geotification;
+			productReference = CD6F11B4293A551C00FE8F2F /* Geotification.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD6F11C9293A552500FE8F2F /* GeotificationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD6F11E1293A552500FE8F2F /* Build configuration list for PBXNativeTarget "GeotificationTests" */;
+			buildPhases = (
+				CD6F11C6293A552500FE8F2F /* Sources */,
+				CD6F11C7293A552500FE8F2F /* Frameworks */,
+				CD6F11C8293A552500FE8F2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD6F11CC293A552500FE8F2F /* PBXTargetDependency */,
+			);
+			name = GeotificationTests;
+			productName = GeotificationTests;
+			productReference = CD6F11CA293A552500FE8F2F /* GeotificationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD6F11D3293A552500FE8F2F /* GeotificationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD6F11E4293A552500FE8F2F /* Build configuration list for PBXNativeTarget "GeotificationUITests" */;
+			buildPhases = (
+				CD6F11D0293A552500FE8F2F /* Sources */,
+				CD6F11D1293A552500FE8F2F /* Frameworks */,
+				CD6F11D2293A552500FE8F2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD6F11D6293A552500FE8F2F /* PBXTargetDependency */,
+			);
+			name = GeotificationUITests;
+			productName = GeotificationUITests;
+			productReference = CD6F11D4293A552500FE8F2F /* GeotificationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD6F11AC293A551C00FE8F2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					CD6F11B3293A551C00FE8F2F = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					CD6F11C9293A552500FE8F2F = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = CD6F11B3293A551C00FE8F2F;
+					};
+					CD6F11D3293A552500FE8F2F = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = CD6F11B3293A551C00FE8F2F;
+					};
+				};
+			};
+			buildConfigurationList = CD6F11AF293A551C00FE8F2F /* Build configuration list for PBXProject "Geotification" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD6F11AB293A551C00FE8F2F;
+			productRefGroup = CD6F11B5293A551C00FE8F2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD6F11B3293A551C00FE8F2F /* Geotification */,
+				CD6F11C9293A552500FE8F2F /* GeotificationTests */,
+				CD6F11D3293A552500FE8F2F /* GeotificationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD6F11B2293A551C00FE8F2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6F11C4293A552400FE8F2F /* LaunchScreen.storyboard in Resources */,
+				CD6F11C1293A552400FE8F2F /* Assets.xcassets in Resources */,
+				CD6F11BF293A551C00FE8F2F /* Main.storyboard in Resources */,
+				CD5D411E293CE50D002A471F /* LocationsForSimulation.gpx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6F11C8293A552500FE8F2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6F11D2293A552500FE8F2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD6F11B0293A551C00FE8F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5D411C293CE1FF002A471F /* Parser.swift in Sources */,
+				CD6F11BC293A551C00FE8F2F /* ViewController.swift in Sources */,
+				CD6F11B8293A551C00FE8F2F /* AppDelegate.swift in Sources */,
+				CD6F11BA293A551C00FE8F2F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6F11C6293A552500FE8F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6F11CF293A552500FE8F2F /* GeotificationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6F11D0293A552500FE8F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6F11DB293A552500FE8F2F /* GeotificationUITestsLaunchTests.swift in Sources */,
+				CD6F11D9293A552500FE8F2F /* GeotificationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD6F11CC293A552500FE8F2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD6F11B3293A551C00FE8F2F /* Geotification */;
+			targetProxy = CD6F11CB293A552500FE8F2F /* PBXContainerItemProxy */;
+		};
+		CD6F11D6293A552500FE8F2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD6F11B3293A551C00FE8F2F /* Geotification */;
+			targetProxy = CD6F11D5293A552500FE8F2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD6F11BD293A551C00FE8F2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD6F11BE293A551C00FE8F2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD6F11C2293A552400FE8F2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD6F11C3293A552400FE8F2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD6F11DC293A552500FE8F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD6F11DD293A552500FE8F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD6F11DF293A552500FE8F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EB68ZDTTFN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Geotification/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Access to location whether user has entered specific region or not ";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Access to location whether user has enetered specific region or not";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.123Enterprises.Geotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD6F11E0293A552500FE8F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EB68ZDTTFN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Geotification/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Access to location whether user has entered specific region or not ";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Access to location whether user has enetered specific region or not";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.123Enterprises.Geotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD6F11E2293A552500FE8F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EB68ZDTTFN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.123Enterprises.GeotificationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geotification.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Geotification";
+			};
+			name = Debug;
+		};
+		CD6F11E3293A552500FE8F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EB68ZDTTFN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.123Enterprises.GeotificationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geotification.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Geotification";
+			};
+			name = Release;
+		};
+		CD6F11E5293A552500FE8F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EB68ZDTTFN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.123Enterprises.GeotificationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Geotification;
+			};
+			name = Debug;
+		};
+		CD6F11E6293A552500FE8F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EB68ZDTTFN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.123Enterprises.GeotificationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Geotification;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD6F11AF293A551C00FE8F2F /* Build configuration list for PBXProject "Geotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6F11DC293A552500FE8F2F /* Debug */,
+				CD6F11DD293A552500FE8F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD6F11DE293A552500FE8F2F /* Build configuration list for PBXNativeTarget "Geotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6F11DF293A552500FE8F2F /* Debug */,
+				CD6F11E0293A552500FE8F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD6F11E1293A552500FE8F2F /* Build configuration list for PBXNativeTarget "GeotificationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6F11E2293A552500FE8F2F /* Debug */,
+				CD6F11E3293A552500FE8F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD6F11E4293A552500FE8F2F /* Build configuration list for PBXNativeTarget "GeotificationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6F11E5293A552500FE8F2F /* Debug */,
+				CD6F11E6293A552500FE8F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD6F11AC293A551C00FE8F2F /* Project object */;
+}
